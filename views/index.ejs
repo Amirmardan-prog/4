@@ -1,0 +1,14 @@
+
+<%-include('header'); -%>
+
+    <ul>
+      <%for (var i=0; i<newTask.length; i++){%>
+        <li><%=newTask[i]%></li>
+      <%}%>
+
+      <form class="" action="/" method="post">
+        <input type="text" name="newTask">
+        <button type="submit" name="button" value=<%=title%>>+</button>
+      </form>
+    </ul>
+<%-include('footer'); -%>
